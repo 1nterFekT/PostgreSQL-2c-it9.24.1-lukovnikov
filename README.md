@@ -20,7 +20,8 @@ Each folder contains SQL scripts and related files for the corresponding checkpo
 
 ## Database ERD
 
-The ERD (Entity-Relationship Diagram) of the database is shown below.
+The ERD (Entity-Relationship Diagram) of the database is shown below.  
+_Tables marked by color. Blue - cinema structure, purple - booking system, green - movie metadata_
 
 ![ERD Diagram](images/ERD-Full.png)
 
