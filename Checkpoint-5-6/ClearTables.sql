@@ -1,6 +1,8 @@
 create or replace procedure Clear_all_tables()
 language sql
 as $$
+	delete from review_comments;
+	delete from reviews;
 	delete from tickets;
 	delete from booking;
 	delete from clients;
@@ -21,6 +23,8 @@ as $$
 	delete from directors;
 	delete from composers;
 
+	alter sequence review_comments_id_comment_seq restart with 1;
+	alter sequence reviews_id_review_seq restart with 1;
 	alter sequence tickets_id_ticket_seq restart with 1;
 	alter sequence booking_id_booking_seq restart with 1;
 	alter sequence clients_id_client_seq restart with 1;
